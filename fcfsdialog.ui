@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FCFSDialog</class>
+ <widget class="QDialog" name="FCFSDialog">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>700</height></rect></property>
+  <property name="styleSheet"><string notr="true">background-color: #121212; color: white;</string></property>
+  <layout class="QVBoxLayout" name="mainVLayout">
+   <item>
+    <layout class="QHBoxLayout" name="inputLayout">
+     <property name="spacing"><number>2</number></property>
+
+     <item><widget class="QLabel" name="label"><property name="text"><string>Arr:</string></property><property name="fixedWidth"><number>30</number></property></widget></item>
+     <item><widget class="QLineEdit" name="arrivalLineEdit">
+      <property name="fixedSize"><size><width>45</width><height>22</height></size></property>
+      <property name="styleSheet"><string notr="true">border: 1px solid red; background: #1e1e1e;</string></property>
+     </widget></item>
+
+     <item><spacer name="s1"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>10</width><height>20</height></size></property></spacer></item>
+
+     <item><widget class="QLabel" name="label_2"><property name="text"><string>Burst:</string></property><property name="fixedWidth"><number>40</number></property></widget></item>
+     <item><widget class="QLineEdit" name="burstLineEdit_2">
+      <property name="fixedSize"><size><width>45</width><height>22</height></size></property>
+      <property name="styleSheet"><string notr="true">border: 1px solid red; background: #1e1e1e;</string></property>
+     </widget></item>
+
+     <item><spacer name="s2"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>10</width><height>20</height></size></property></spacer></item>
+
+     <item><widget class="QLabel" name="prioLabel"><property name="text"><string>Prio:</string></property><property name="fixedWidth"><number>35</number></property></widget></item>
+     <item><widget class="QLineEdit" name="priorityLineEdit">
+      <property name="fixedSize"><size><width>40</width><height>22</height></size></property>
+      <property name="styleSheet"><string notr="true">border: 1px solid red; background: #1e1e1e;</string></property>
+     </widget></item>
+
+     <item><spacer name="s3"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>10</width><height>20</height></size></property></spacer></item>
+
+     <item><widget class="QLabel" name="qLabel"><property name="text"><string>Q:</string></property><property name="fixedWidth"><number>20</number></property></widget></item>
+     <item><widget class="QLineEdit" name="quantumLineEdit">
+      <property name="fixedSize"><size><width>40</width><height>22</height></size></property>
+      <property name="styleSheet"><string notr="true">border: 1px solid red; background: #1e1e1e;</string></property>
+     </widget></item>
+
+     <item><spacer name="s4"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeType"><enum>QSizePolicy::Fixed</enum></property><property name="sizeHint" stdset="0"><size><width>10</width><height>20</height></size></property></spacer></item>
+
+     <item><widget class="QPushButton" name="addProcessButton">
+      <property name="text"><string>Add</string></property>
+      <property name="fixedSize"><size><width>45</width><height>25</height></size></property>
+      <property name="styleSheet"><string notr="true">background-color: #cc0000; color: white; border-radius: 3px; font-size: 10px;</string></property>
+     </widget></item>
+
+     <item><spacer name="horizontalSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+    </layout>
+   </item>
+
+   <item><widget class="QTableWidget" name="tableWidget"><property name="styleSheet"><string notr="true">border: 1px solid red; gridline-color: red;</string></property></widget></item>
+   <item><widget class="QLabel" name="timeLabel"><property name="text"><string>⏱ Time: 0s</string></property></widget></item>
+   <item><widget class="QLabel" name="ganttLabel"><property name="minimumSize"><size><width>0</width><height>80</height></size></property><property name="styleSheet"><string notr="true">border: 2px solid red; background: black; color: #ff007f;</string></property></widget></item>
+
+   <item>
+    <layout class="QHBoxLayout" name="bottomBtns">
+     <item><widget class="QPushButton" name="startButton"><property name="text"><string>START</string></property><property name="styleSheet"><string notr="true">background: #cc0000; padding: 10px;</string></property></widget></item>
+     <item><widget class="QPushButton" name="backButton"><property name="text"><string>BACK</string></property></widget></item>
+    </layout>
+   </item>
+   <item><widget class="QLabel" name="finish"><property name="alignment"><set>Qt::AlignCenter</set></property><property name="styleSheet"><string notr="true">color: lime; font-weight: bold;</string></property></widget></item>
+  </layout>
+ </widget>
+</ui>

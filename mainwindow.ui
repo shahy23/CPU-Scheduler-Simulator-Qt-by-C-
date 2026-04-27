@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>400</width><height>500</height></rect></property>
+  <property name="windowTitle"><string>CPU Scheduler - Main Menu</string></property>
+  <property name="styleSheet"><string notr="true">background-color: #121212;</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item><widget class="QLabel" name="label"><property name="text"><string>Select Scheduling Algorithm</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="font"><font><pointsize>16</pointsize><bold>true</bold></font></property><property name="styleSheet"><string notr="true">color: white; margin-bottom: 20px;</string></property></widget></item>
+    <item><widget class="QPushButton" name="fcfsButton"><property name="text"><string>FCFS (First Come First Serve)</string></property></widget></item>
+    <item><widget class="QPushButton" name="sjfButton"><property name="text"><string>SJF (Shortest Job First)</string></property></widget></item>
+    <item><widget class="QPushButton" name="priorityButton"><property name="text"><string>Priority Scheduling</string></property></widget></item>
+    <item><widget class="QPushButton" name="rrButton"><property name="text"><string>Round Robin</string></property></widget></item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
